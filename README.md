@@ -15,7 +15,14 @@ session.cookie_secure = 1
 session.cookie_samesite = "None"
 ```
 --
-then do the operations here.
+
+---
+
+For laravel, you have to make changes in the session.php file:
+
+```bash  'path' => '/;SameSite=None; secure', ```
+
+For other:
 
 ```bash
 https://stackoverflow.com/a/51128675
